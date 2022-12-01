@@ -1,0 +1,11 @@
+version: '3.8'
+
+name: aoc-2021
+
+services:
+  hhvm:
+    image: hhvm/hhvm:latest
+    tty: true
+    volumes:
+      - '.:/var/advent_of_code/'
+
