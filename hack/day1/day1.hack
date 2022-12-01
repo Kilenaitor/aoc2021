@@ -1,7 +1,7 @@
 use namespace HH\Lib\{C, File, Str, Vec};
 
 <<__EntryPoint>>
-async function main(): Awaitable<void> {
+async function day1(): Awaitable<void> {
   $depths = await File\open_read_only('input.txt')->readAllAsync()
     |> Str\split($$, "\n")
     |> Vec\map($$, $depth ==> (int)$depth);
